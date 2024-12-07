@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyanarayan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js" defer></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"
+        defer></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"
+        defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="wide-screen">
+            <div class="left">
+                <div class="imageContainer"><img src="my_image.jpeg" alt=""></div>
+                Satya's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Qualification</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#internship">Internships</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="small-screen">
+            <div class="fixed-contents">
+                <div class="small-left">
+                    <div class="imageContainer"><img src="my_image.jpeg" alt=""></div>
+                    Satya's Portfolio
+                </div>
+                <div onclick="toggleMenu()" class="hamburger-container">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <ul class="small-right">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Qualification</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Technical Skills</a></li>
+                <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#internship" onclick="toggleMenu()">Internships</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftContainer">
+                <h1>Hi! I am <span class="name">Satyanarayan</span></h1>
+                <h3 class="middleText">and I'm a passionate</h3>
+                <span id="element"></span>
+            </div>
+            <div class="rightContainer lottieContainer"><lottie-player
+                    src="https://lottie.host/01e6fb5a-2bf5-47e8-abba-b9efcb91db0d/PAIVO72Wkw.json"
+                    background="transparent" speed="1" style="width: 500px; height: 500px" loop autoplay direction="1"
+                    mode="normal"></lottie-player></div>
+        </section>
+        <hr>
+        <section class="secondSection" id="education">
+            <div class="education-leftContainer">
+                <h1>Qualification</h1>
+                <div class="lottieContainer"><dotlottie-player
+                        src="https://lottie.host/e9f63b6d-3dcc-4017-b61c-b4e295c081e4/DDYvBwQlYT.lottie"
+                        background="transparent" speed="1" style="width: 350px; height: 350px" loop
+                        autoplay></dotlottie-player></div>
+            </div>
+            <div class="roadmaps-container view-animate">
+                <div class="roadmap">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                        <circle cx="100" cy="100" r="50" />
+                        <text x="100" y="100">
+                            <tspan x="100" dy="-7">10th</tspan>
+                            <tspan x="100" dy="15">(2016-17)</tspan>
+                        </text>
+                    </svg>
+                </div>
+                <div class="roadmap">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                        <circle cx="100" cy="100" r="50" />
+                        <text x="100" y="100">
+                            <tspan x="100" dy="-7">12th</tspan>
+                            <tspan x="100" dy="15">(2017-19)</tspan>
+                        </text>
+                    </svg>
+                </div>
+                <div class="roadmap">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                        <circle cx="100" cy="100" r="50" />
+                        <text x="100" y="100">
+                            <tspan x="100" dy="-7">BCA</tspan>
+                            <tspan x="100" dy="15">(2019-22)</tspan>
+                        </text>
+                    </svg>
+                </div>
+                <div class="roadmap">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                        <circle cx="100" cy="100" r="50" />
+                        <text x="100" y="100">
+                            <tspan x="100" dy="-7">MCA</tspan>
+                            <tspan x="100" dy="15">(2022-24)</tspan>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdSection" id="skills">
+            <div class="skills-leftContainer">
+                <ul class="skills-mainlist">
+                    <li>
+                        <h2 class="skills-title">Backend-Skills</h2>
+                        <ul class="skills-sublist">
+                            <li>Java</li>
+                            <li>Node.JS</li>
+                            <li>Next.JS</li>
+                            <li>PHP</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="skills-title">Frontend-skills</h2>
+                        <ul class="skills-sublist">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                            <li>Next.JS</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="skills-title">Databases-Skills</h2>
+                        <ul class="skills-sublist">
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="skills-title">DevOps-Skills</h2>
+                        <ul class="skills-sublist">
+                            <li>Docker</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills-rightContainer">
+                <h1>Technical Skills</h1>
+                <div class="lottieContainer"><dotlottie-player
+                        src="https://lottie.host/e9dfa51e-c17d-4de6-9473-5658fa1197a1/Xj2Pg6I8bB.lottie"
+                        background="transparent" speed="1" style="width: 450px; height: 450px" loop
+                        autoplay></dotlottie-player></div>
+            </div>
+        </section>
+        <hr>
+        <section class="fourthSection" id="achievements">
+            <div class="achievements-leftContainer">
+                <h1>Achievements</h1>
+                <dotlottie-player src="https://lottie.host/c27aced6-f3dc-4a7a-b671-35f59014c99e/Khdx62y4S6.lottie"
+                    background="transparent" speed="1.2" style="width: 450px; height: 450px" loop
+                    autoplay></dotlottie-player>
+            </div>
+            <div class="achievements-rightContainer">
+                <ul class="achievements-list">
+                    <li>
+                        <div class="certification-container">
+                            <h2 class="certification-title">Google Play Academy Certification</h2>
+                            <span class="certification-detail">Your app or game's store listing is the first thing a
+                                user sees when they browse or search Google Play for their next great app or game
+                                experience. High-quality and policy-compliant store listings help to establish user
+                                trust, which benefits the entire Google Play developer community.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="certification-container">
+                            <h2 class="certification-title">Simplilearn Java Certification</h2>
+                            <span class="certification-detail">The Simplilearn Java Certification Course provides
+                                comprehensive training in core and advanced Java concepts</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="certification-container">
+                            <h2 class="certification-title">Circuit Digest World Energy Challenge 2023</h2>
+                            <span class="certification-detail">CircuitDigest teamed up with DigiKey and organized the
+                                World Energy Challenge 2023 contest to see innovative, eco-friendly, and sustainable
+                                electronic projects.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="fifthSection" id="projects">
+            <div class="projects-leftContainer">
+                <ul class="projects-list">
+                    <li>
+                        <h2><a href="https://automateandlearn.site/" target="_blank">automateandlearn</a></h2>
+                        <span>Technologies Used: Next.JS, Node.JS, MongoDB, Docker</span>
+                    </li>
+                    <li>
+                        <h2><a href="#">Small S3 Clone</a></h2>
+                        <span>Technologies Used: Node.JS, MongoDB</span>
+                    </li>
+                    <li>
+                        <h2><a href="#">Library Management System</a></h2>
+                        <span>Technologies Used: Core Java, Java Swing</span>
+                    </li>
+                    <li>
+                        <h2><a href="#">Tic Tac Toe</a></h2>
+                        <span>Technologies Used: HTML5, CSS3, JavaScript, jQuery</span>
+                    </li>
+                    <li>
+                        <h2><a href="#">Library Management System</a></h2>
+                        <span>Technologies Used: HTML5, CSS3, JavaScript, PHP</span>
+                    </li>
+                    <li>
+                        <h2><a href="#">Home Automation</a></h2>
+                        <span>Technologies Used: Arduino language, ESP8266 Microcontroller, Arduino IDE</span>
+                    </li>
+                    <li>
+                        <h2><a href="#">Home Automation Android Application</a></h2>
+                        <span>Technologies Used: Java, Node.JS, XML, Android Studio IDE</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects-rightContainer">
+                <h1>Personal Projects</h1>
+                <div class="lottieContainer"><dotlottie-player
+                        src="https://lottie.host/a4a08c15-bbf8-40d6-b165-d842d576ccfd/0YYdamXV2j.lottie"
+                        background="transparent" speed="1" style="width: 450px; height: 450px" loop
+                        autoplay></dotlottie-player></div>
+            </div>
+        </section>
+        <hr>
+        <section class="sixthSection" id="internship">
+            <div class="internship-leftContainer">
+                <h1>Internships</h1>
+                <dotlottie-player src="https://lottie.host/58fa5757-d3e6-4b29-9f16-2a5aada774bb/OAF7jP5QzC.lottie"
+                    background="transparent" speed="1" style="width: 450px; height: 450px" loop
+                    autoplay></dotlottie-player>
+            </div>
+            <div class="internship-rightContainer">
+                <h2>Infocreatives Pvt. Ltd.</h2>
+                <p>
+                    (From April 2022 to July 2022)
+                </p>
+                <span>
+                    During my internship at Infocreatives, I contributed to the development of a Library Management
+                    System as a Backend Developer and Database Designer. My responsibilities included designing and
+                    implementing database schemas, optimizing queries, and developing backend APIs to support the
+                    application. This experience provided me with valuable insights into industry-standard practices and
+                    significantly improved my technical and professional skills.
+                </span>
+            </div>
+        </section>
+        <hr>
+        <section class="seventhSection" id="about">
+            <div class="about-leftContainer">
+                <h3>
+                    As a full stack developer with a strong foundation in Java, I hold both a Bachelor’s degree in
+                    Computer Applications (BCA) and a Master’s degree in Computer Applications (MCA). With a
+                    passion for innovation and continuous learning, I actively broaden my skill set, independently
+                    developing new solutions. My experience spans front-end and back-end development, database
+                    management, and software architecture. I am excited to bring my technical proficiency and creative
+                    problem-solving abilities to a dynamic team to deliver impactful results.
+                </h3>
+            </div>
+            <div class="about-rightContainer">
+                <h1>About Me</h1>
+                <div class="lottieContainer"><dotlottie-player src="https://lottie.host/ddaa6bff-f1d7-40e3-9177-67a1ad84d8b1/gOCNlN0ZXn.lottie"
+                    background="transparent" speed="1" style="width: 400px; height: 400px" loop
+                    autoplay></dotlottie-player></div>
+            </div>
+        </section>
+        <hr>
+        <section class="eighthSection" id="contact">
+            <div class="contact-leftContainer">
+                <h1>Get In Touch</h1>
+                <div class="lottieContainer"><dotlottie-player
+                        src="https://lottie.host/46c1b32b-adc6-4142-b94f-4df238f01cf6/0yGwFQCkCp.lottie"
+                        background="transparent" speed="1" style="width: 450px; height: 450px" loop
+                        autoplay></dotlottie-player></div>
+            </div>
+            <div class="contact-rightContainer">
+                <div class="social-mediaContainer">
+                    <h2>Online Presence</h2>
+                    <div class="lottieContainer">
+                        <div class="social-media-linksContainer">
+                            <a href="https://github.com/satyagithub23"><dotlottie-player
+                                    src="https://lottie.host/01d57b7e-5105-4233-b786-bd68b324a95d/82G2unFcHd.lottie"
+                                    background="transparent" speed="1" style="width: 90px; height: 90px" loop
+                                    autoplay></dotlottie-player></a>
+                            <a href="https://www.linkedin.com/in/satya-narayan-sahu-634276202/"><dotlottie-player
+                                    src="https://lottie.host/42a23cbf-ac92-4fb5-884f-e60012cc9252/mgfaDu4sLM.lottie"
+                                    background="transparent" speed="1"
+                                    style="width: 100px; height: 100px; margin-left: 1.5rem;" loop
+                                    autoplay></dotlottie-player></a>
+                            <a href="https://www.instagram.com/satya70772/"><dotlottie-player
+                                    src="https://lottie.host/dd52e404-a3d7-4929-9283-f20d74d1b7ad/0Bm6M8MM0k.lottie"
+                                    background="transparent" speed="1" style="width: 130px; height: 130px" loop
+                                    autoplay></dotlottie-player></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="professionalContacts">
+                    <h3>Gmail: satya.narayan.40270@gmail.com</h3>
+                    <h3>Phone: 7205210533</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>Copyrights &copy; 2024 Design Automateandlearn Inc. All rights reserved.</footer>
+</body>
+
+</html>
