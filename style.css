@@ -1,162 +1,6 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import url('utils.css');
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding: 10rem;
-}
-
-body {
-    background-color: #344852;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    scroll-behavior: smooth;
-    scroll-padding: 10rem;
-}
-
-main {
-    margin-top: 5rem;
-}
-
-main hr {
-    border: 0;
-    height: 1px;
-    background-color: #7dbad8;
-    margin: 1rem 5rem;
-}
-
-nav {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #406c837c;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 4rem;
-    color: aliceblue;
-    z-index: 999;
-    backdrop-filter: blur(8px);
-}
-
-.small-screen {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    border-bottom: 1px solid white;
-}
-
-.fixed-contents {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
-    padding: 5px 8px 5px 8px;
-}
-
-.small-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 3px;
-    margin-right: auto;
-}
-.hamburger-container {
-    display: none;
-    margin-left: auto;
-}
-
-.small-right {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.small-right li {
-    list-style: none;
-    border-bottom: 1px solid white;
-    padding: 0.5rem 0;
-    margin: 1rem 0;
-}
-
-.small-right a {
-    color: white;
-    text-decoration: none;
-    margin-left: auto;
-}
-
-.line {
-    width: 1.3rem;
-    border: 1px solid white;
-    margin-bottom: 0.2rem;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    list-style: none;
-    margin: 0 23px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-}
-
-nav ul li a:hover {
-    cursor: pointer;
-    color: #3aa5db;
-    text-shadow: 2px 2px 7px #8fcdec;
-    font-size: 1.08rem;
-}
-
-.small-screen {
-    display: none;
-}
-
-.left {
-    display: flex;
-    margin-right: auto;
-    margin-left: 0.3rem;
-    font-size: 1.3rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.imageContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0.5rem;
-    border-radius: 50%;
-    border: 2px solid #adc4cf;
-    overflow: hidden;
-}
-
-.imageContainer img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-
+/* Into section */
 .firstSection {
     display: flex;
     justify-content: space-around;
@@ -184,6 +28,9 @@ nav ul li a:hover {
     text-shadow: 2px 2px 5px #10ffdfe1;
 }
 
+
+
+/* Qualification section */
 .secondSection {
     margin: 2rem auto;
     color: white;
@@ -216,7 +63,57 @@ nav ul li a:hover {
 .roadmap svg {
     overflow: visible;
 }
+circle {
+    fill: none;
+    stroke: #28ffe2;
+    stroke-width: 8;
+    stroke-dasharray: 314;
+    /* Circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 314;
+    /* Start from hidden */
+    transform: rotate(-90deg);
+    transform-origin: center;
+    /* animation: draw 1s linear forwards; */
+    transition: stroke-dashoffset 1s linear;
+}
 
+text {
+    font-size: 16px;
+    font-weight: bold;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    fill: #ffffff;
+}
+
+text tspan:last-child {
+    font-size: small;
+    font-weight: normal;
+}
+
+circle.animated {
+    stroke-dashoffset: 0;
+}
+
+.view-animate {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+/* Skills section */
 .thirdSection {
     display: flex;
     margin: 0rem auto;
@@ -270,11 +167,12 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
-
 .skills-title {
     font-size: 1.8rem;
 }
 
+
+/* Achievements section */
 .fourthSection {
     display: flex;
     margin: 2rem auto;
@@ -330,7 +228,7 @@ nav ul li a:hover {
     background-color: #2d6683;
     padding: 1rem;
     box-shadow: 3px 5px 10px #6da5c2;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 .achievements-rightContainer {
@@ -339,6 +237,8 @@ nav ul li a:hover {
     margin: 0 0 0 5rem;
 }
 
+
+/* Projects section */
 .fifthSection {
     display: flex;
     margin: 0 auto;
@@ -361,13 +261,18 @@ nav ul li a:hover {
 }
 
 .projects-leftContainer {
-    /* border: 2px solid red; */
     width: 100%;
 }
 
 .projects-list li {
     list-style: none;
     margin-bottom: 1.1rem;
+}
+
+.projects-list li:hover {
+    background-color: #2d6683;
+    padding: 1rem;
+    box-shadow: 6px 6px 10px #7fcff77e;
 }
 
 .projects-list li a {
@@ -390,6 +295,8 @@ nav ul li a:hover {
     font-weight: lighter;
 }
 
+
+/* Internship section */
 .sixthSection {
     display: flex;
     margin: 0 auto;
@@ -417,7 +324,16 @@ nav ul li a:hover {
     align-items: flex-start;
 }
 
+.internship-rightContainer a {
+    color: white;
+    text-decoration: none;
+}
+.internship-rightContainer a:visited {
+    color: white;
+}
+
 .internship-rightContainer h2 {
+    color: white;
     font-size: 1.8rem;
 }
 
@@ -435,6 +351,8 @@ nav ul li a:hover {
     font-weight: normal;
 }
 
+
+/* About section */
 .seventhSection {
     display: flex;
     margin: 0 auto;
@@ -463,6 +381,8 @@ nav ul li a:hover {
     font-weight: normal;
 }
 
+
+/* Contact section */
 .eighthSection {
     display: flex;
     margin: 0 auto;
@@ -513,55 +433,8 @@ nav ul li a:hover {
     font-size: 1.8rem;
 }
 
-circle {
-    fill: none;
-    stroke: #28ffe2;
-    stroke-width: 8;
-    stroke-dasharray: 314;
-    /* Circumference of the circle (2 * π * r) */
-    stroke-dashoffset: 314;
-    /* Start from hidden */
-    transform: rotate(-90deg);
-    transform-origin: center;
-    /* animation: draw 1s linear forwards; */
-    transition: stroke-dashoffset 1s linear;
-}
 
-text {
-    font-size: 16px;
-    font-weight: bold;
-    text-anchor: middle;
-    dominant-baseline: middle;
-    fill: #ffffff;
-}
-
-text tspan:last-child {
-    font-size: small;
-    font-weight: normal;
-}
-
-circle.animated {
-    stroke-dashoffset: 0;
-}
-
-.view-animate {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-}
-
+/* Footer section */
 footer {
     width: 100%;
     padding: 0.9rem;
@@ -573,6 +446,8 @@ footer {
     font-weight: lighter;
 }
 
+
+/* Responsive section */
 @media only screen and (width <= 1185px)  {
     .wide-screen {
         display: none;
